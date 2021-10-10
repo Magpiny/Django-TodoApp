@@ -1,0 +1,39 @@
+{% extends 'base/base.html' %}
+
+<!-- My Todos to be displayed here-->
+{% block table %}
+    <h2>My Todos</h2>
+    
+        <table>
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Task</th>
+                    <th>Date </th>
+                    <th>Time</th>
+                    <th>Deadline</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for todo in todos %}
+                    <tr>
+                        <th scope="col" id="pk">{{ todo.pk }}</th>
+                        <td >{{ todo.task }}</td>
+                        <td>{{ todo.mdate }}</td>
+                        <td>{{ todo.mtime }}</td>
+                        <td>
+                            {{ todo.deadline }}
+                    <button><a href="{% url 'delete' pk=todo.pk %}" class="delete">X</a></button>
+                            <a href="{% url 'edit' pk=todo.pk %}">Edit</a>
+                        </td>
+                        
+                    </tr>
+                {% endfor %}
+            </tbody>
+            
+        </table>
+        <div class="add">
+            <a href="{% url 'index' %}">Add more Todos</a>
+        </div>
+    
+{% endblock %}

@@ -1,0 +1,18 @@
+{% extends 'base/base.html' %}
+
+{% block form %}
+    <form action="" method="POST">
+        <h2>Edit My Todo</h2> <br>
+        {% csrf_token %}
+        
+        <div class="myform">
+            {{ form }}
+            <hr>
+            <button type="submit">Save</button>
+        </div>
+
+        <div>
+            <a href="../../../home">View my Todos </a>
+        </div>
+    </form>
+{% endblock %}

@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Django TodoApp</title>
+    <link rel="stylesheet" href="{% static 'base/css/site.css' %}" media="screen">
+</head>
+<body>
+    <div class="container">
+
+        <header>
+            <h1>Django TodoApp</h1>
+        </header>
+
+        <main id="form">
+            {% block form %}
+
+            {% endblock %}
+        </main>
+
+        <main id="table">
+            {% block table %}
+
+            {% endblock %}
+        </main>
+
+        <footer>
+            {% now "Y" as current_year %}
+            <h1> &copy; {{ current_year}} by MAGPINY&TRADE; </h1>
+        </footer>
+    </div>
+</body>
+</html>
