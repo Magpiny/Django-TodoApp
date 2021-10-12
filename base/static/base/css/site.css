@@ -1,7 +1,6 @@
 @media screen and (max-width:800px) {
     .container {
         width: 100%;
-        height: 100vh;
         margin: 0 auto;
         font-size: smaller;
     }
@@ -77,13 +76,18 @@
         color: blue;
     }
 
+    #pk{
+        background-color: blueviolet;
+        color: white;
+    }
+
 }
 
 @media screen and (min-width:801px) {
     .container {
         box-sizing: border-box;
         margin: 0;
-        min-height: auto;
+        height: 100vh;
     }
 
     header,
@@ -98,7 +102,10 @@
     }
 
     footer {
-        margin-bottom: 2%;
+        position: sticky;
+        bottom: 0;
+        margin-bottom: 0%;
+
     }
 
     .myform>button {
@@ -148,7 +155,6 @@
     }
 
     td{
-        display: flexbox;
         text-align: center;
         
         
