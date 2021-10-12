@@ -39,4 +39,4 @@ def delete(request, pk=None):
     todo = get_object_or_404(TodoForm, pk=pk)
     todo.delete()
 
-    return render(request, 'myapp/index.html')
+    return render(request, 'myapp/delete.html')

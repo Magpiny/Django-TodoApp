@@ -1,128 +1,200 @@
-@media screen and (max-width:356px) {
+@media screen and (max-width:800px) {
     .container {
         width: 100%;
         height: 100vh;
         margin: 0 auto;
-        font-size: 0.6;
+        font-size: smaller;
     }
 
     header,
     footer {
+        display: flex;
+        justify-content: center;
         width: 100%;
         height: 10vh;
+        background-color: blueviolet;
+        color: white;
     }
+    footer{
+        margin-bottom: 3px;
+    }
+    form{
+        display: flex;
+        width: 80vw;
+        margin: 0 auto;
+    }
+    form, .myform{
+        display: flex;
+        flex-direction: column;
+        
+    }
+     .myform>button {
+         width: 50vw;
+         cursor: pointer;
+         padding: 0 1.5rem;
+         font-size: small;
+         align-self: center;
+     }
+     h2 {
+         text-align: center;
+         color: blueviolet;
+         font-size: small;
+     }
 
     table {
-        margin: 0px;
-        padding: 0;
+         margin: 0 auto;
     }
+
 
     td {
         font-size: small;
-        margin: 0;
-        padding: 0%;
+        text-align: center;
     }
+
+    tbody>tr:nth-child(odd) {
+        background-color: lightgrey;
+    }
+
+    label{
+        color: rgb(165, 126, 202);
+        font-weight: bolder;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-style: italic;
+    }
+    .delete:hover {
+        color: rgb(255, 0, 0);
+    }
+
+    a>.edit{
+        padding-right: 0.3rem;
+    }
+
+    .edit:hover {
+        color: orange;
+    }
+
+    a:hover {
+        color: blue;
+    }
+
 }
 
-.container{
-    box-sizing: border-box;
-    margin: 0;
-    min-height: 100%;
-}
+@media screen and (min-width:801px) {
+    .container {
+        box-sizing: border-box;
+        margin: 0;
+        min-height: auto;
+    }
 
-header, footer {
-    display: flex;
-    justify-content: center;
-    height: 10vh;
-    width: 100%;
-    background-color: blueviolet;
-    color: white;
-   
-}
+    header,
+    footer {
+        display: flex;
+        justify-content: center;
+        height: 10vh;
+        width: 100%;
+        background-color: blueviolet;
+        color: white;
 
-footer{
-    margin-bottom: 2%;
-}
+    }
 
-.myform>button{
-    width: 20vw;
-    cursor: pointer;
-    padding: auto 1.5rem;
-    font-size: larger;
-    margin-bottom: 1.5rem;
-    align-self: center;
-}
+    footer {
+        margin-bottom: 2%;
+    }
 
-.myform{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
+    .myform>button {
+        width: 20vw;
+        cursor: pointer;
+        padding: 0 1.5rem;
+        font-size: larger;
+        margin-bottom: 1.5rem;
+        align-self: center;
+    }
 
-#form{
-    display: flex;
-    font-size: larger;
-    flex-direction: column;
-     padding-left: 10vw;
-     padding-right: 10vw;
-}
+    .myform {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 
-#table{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding-left: 10vw;
-    padding-right: 10vw;
-}
+    #form {
+        display: flex;
+        font-size: larger;
+        flex-direction: column;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        
+    }
 
-#pk{
-    background-color: blueviolet;
-    color: white;
-}
+    #table {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
 
-h2{
-    text-align: center;
-    color: blueviolet;
-}
+    #pk {
+        background-color: blueviolet;
+        color: white;
+    }
 
-tbody>tr:nth-child(odd){
-    background-color:lightgrey;
-}
+    h2 {
+        text-align: center;
+        color: blueviolet;
+    }
 
-td{
-    margin: 0 auto;
-    padding-left: 6.5rem;
-}
+    tbody>tr:nth-child(odd) {
+        background-color: lightgrey;
+    }
 
-a{
-    font-size: larger;
-    font-weight: bolder;
-    font-style: unset;
-}
+    td{
+        display: flexbox;
+        text-align: center;
+        
+        
+        
+    }
 
-.delete{
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-    margin: auto 0.3rem;
-}
 
-.delete:hover{
-    color:rgb(255, 0, 0);
-}
+    a {
+        font-size: larger;
+        font-weight: bolder;
+        font-style: unset;
+        text-decoration: none;
+    }
 
-.save{
+    .delete {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        margin: auto 0.3rem;
+    }
+
+    .delete:hover {
+        color: rgb(255, 0, 0);
+    }
+
+    .edit:hover {
+        color: orange;
+    }
+
+    .save {
+
+        font-size: larger;
+        font-weight: bolder;
+        color: white;
+        background-color: blueviolet;
+        border-radius: 1.2rem;
+    }
+
+    .save:hover {
+        background-color: green;
+    }
+
+    a:hover {
+        color: blue;
+    }
+    h1>.delete{
+        color: green;
+    }
     
-    font-size: larger;
-    font-weight: bolder;
-    color: white;
-    background-color: blueviolet;
-    border-radius: 1.2rem;
-}
-
-.save:hover{
-    background-color: green;
-}
-
-a:hover{
-    color: blue;
 }

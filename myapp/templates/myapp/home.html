@@ -21,11 +21,9 @@
                         <td >{{ todo.task }}</td>
                         <td>{{ todo.mdate }}</td>
                         <td>{{ todo.mtime }}</td>
-                        <td>
-                            {{ todo.deadline }}
-                    <button><a href="{% url 'delete' pk=todo.pk %}" class="delete">X</a></button>
-                            <a href="{% url 'edit' pk=todo.pk %}">Edit</a>
-                        </td>
+                        <td>{{ todo.deadline }}</td>
+                        <td> <a href="{% url 'delete' pk=todo.pk %}" class="delete" title="delete record?">🗑</a> </td>
+                        <td> <a href="{% url 'edit' pk=todo.pk %}" class="edit" title="Edit record?">Edit</a> </td>
                         
                     </tr>
                 {% endfor %}
@@ -33,7 +31,7 @@
             
         </table>
         <div class="add">
-            <a href="{% url 'index' %}">Add more Todos</a>
+            <a href="{% url 'index' %}">📝 Add more Todos</a>
         </div>
     
 {% endblock %}
