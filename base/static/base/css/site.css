@@ -84,14 +84,17 @@
 }
 
 @media screen and (min-width:801px) {
+    body{
+        min-height: 100vh;
+    }
     .container {
         box-sizing: border-box;
         margin: 0;
-        height: 100vh;
+        min-height: 100vh;
     }
 
-    header,
     footer {
+        position: sticky ;
         display: flex;
         justify-content: center;
         height: 10vh;
@@ -102,9 +105,8 @@
     }
 
     footer {
-        position: sticky;
+        position: absolute ;
         bottom: 0;
-        margin-bottom: 0%;
 
     }
 
