@@ -9,7 +9,7 @@ backcall==0.2.0
 bcrypt==3.2.0
 Beaker==1.11.0
 beautifulsoup4==4.9.3
-Brlapi==0.8.3
+
 btrfsutil==5.14.2
 CacheControl==0.12.6
 cachetools==4.2.3
