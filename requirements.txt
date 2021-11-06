@@ -2,17 +2,11 @@ anytree==2.8.0
 
 appdirs==1.4.4
 
-asgiref==3.3.1
-attrs==21.2.0
+
 autopep8==1.5.7
-backcall==0.2.0
+
 bcrypt==3.2.0
-Beaker==1.11.0
-beautifulsoup4==4.9.3
 
-
-
-dj-database-url==0.5.0
 Django==3.1.6
 django-allauth==0.45.0
 
@@ -33,9 +27,7 @@ oauthlib==3.1.1
 
 pep517==0.11.0
 
-pycairo==1.20.1
 
-PySocks==1.7.1
 python-dateutil==2.8.1
 python-xlib==0.31
 python3-openid==3.2.0
